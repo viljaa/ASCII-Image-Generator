@@ -1,5 +1,7 @@
 # ASCII-Image-Generator
- Kotlin commandline application for generating ASCII images/animations from local files
+ ### Kotlin commandline application for generating ASCII images/animations from local files
+ 
+ ![cybertruck](https://github.com/viljaa/ASCII-Image-Generator/blob/main/pictures/cybertruck-80px.PNG)
  
  ## Usage
  ASCII Image Generator creates ASCII versions of pictures and gifs from your local machine and outputs the results
