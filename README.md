@@ -78,6 +78,14 @@
  be configured manually within the AsciiAnimation -class in milliseconds, but the final refresh rate when running the animation in terminal is highly dependent on the resolution
  of the ASCII-animation (larger resolution -> slower refresh rate).
  
+ #### ArrayIndexOutOfBoundsException: 4096
+ While trying to read some .gif files the application will throw ArrayIndexOutOfBoundsException: 4096. This is a well known bug in the GIFImageReader class of the Java runtime,
+ which for some reason hasn't been patched to this date. The error only occurs while trying to read some specific .gif files, but it's unkown for the moment why some .gifs
+ result in throwing the error. See the links below for some more information and discussion about the issue:
+ 
+ * [Stackoverflow: ArrayIndexOutOfBoundsException: 4096 while reading gif files](https://stackoverflow.com/questions/22259714/arrayindexoutofboundsexception-4096-while-reading-gif-file)
+ * [Related bug report on ArrayIndexOutOfBoundsException: 4096](https://bugs.openjdk.java.net/browse/JDK-7132728)
+ 
  ### Example
  #### Sphere - maxHeight:32 px - refreshRate: 32ms
  ![](ascii-sphere.gif)
